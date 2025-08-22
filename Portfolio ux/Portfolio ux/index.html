@@ -1,0 +1,251 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Portfolio | Zain Ul Abdain</title>
+  </head>
+  <body>
+  <!-- 3D Background -->
+  <div id="particles-js"></div>
+<!-- Particle.js Library -->
+<script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+
+<!-- Particle.js Config -->
+<script>
+particlesJS("particles-js", {
+  particles: {
+    number: { value: 120 },
+    size: { value: 3 },
+    move: { speed: 2 },
+    line_linked: { enable: true, distance: 150, color: "#00ff88" },
+    color: { value: "#00ff88" }
+  }
+});
+</script>
+
+  <body>
+    
+    
+    <!-- ===== NAVBAR ===== -->
+    <nav>
+      <div class="nav__bar">
+        <a href="#"><span class="logo nav__logo">ZJ</span> ZAIN UL ABDAIN</a>
+        <div class="nav__menu__btn" id="menu-btn">
+          <i class="ri-menu-3-line"></i>
+        </div>
+      </div>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#service">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact" class="btn">Contact</a></li>
+      </ul>
+      <a href="#contact" class="btn btn__large">Contact</a>
+    </nav>
+
+    <!-- ===== HEADER ===== -->
+    <header class="section__container header__container" id="home">
+      <div class="header__image">
+        <img src="assets/IMG-20250622-WA0006.jpg" alt="Zain Portfolio Header" />
+      </div>
+      <div class="header__content">
+        <h1>I'm Zain Ul Abdain<br /><span>Web Developer & Designer</span></h1>
+        <p class="section__description">
+          Founder of a creative software house helping businesses grow with
+          technology, modern design, and impactful digital strategies.
+        </p>
+        <div class="header__btn">
+          <button class="btn">Hire Me Now</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- ===== ABOUT ===== -->
+    <section class="section__container about__container" id="about">
+      <div class="about__image">
+        <img src="assets/IMG_0739.jpg" alt="Zain profile photo" class="about__img" />
+      </div>
+      <div class="about__content">
+        <h2 class="section__header">About Me</h2>
+        <p class="section__description">
+          Hi, I’m Zain 👋 Founder of a software house dedicated to building
+          digital solutions for businesses worldwide.
+          <br /><br />
+          ✅ <strong>Web Development</strong> – modern, responsive websites with clean UI/UX <br />
+          ✅ <strong>Social Media Management</strong> – content creation, account growth & strategy <br />
+          ✅ <strong>Video Editing</strong> – professional, engaging videos for ads, reels & promotions <br />
+          <br />
+          With experience delivering results for startups and small businesses,
+          I focus on <strong>quality, creativity, and timely delivery</strong>.
+          Let’s bring your ideas to life 🚀
+        </p>
+        <div class="about__btn">
+          <button class="btn">Download CV</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SERVICES ===== -->
+    <section class="section__container service__container" id="service">
+      <h2 class="section__header">My Services</h2>
+      <div class="service__grid">
+        <div class="service__card">
+          <span><i class="ri-window-fill"></i></span>
+          <h4>Website Design</h4>
+          <p>Creative, user-friendly, and responsive websites tailored to your business goals.</p>
+        </div>
+        <div class="service__card">
+          <span><i class="ri-store-line"></i></span>
+          <h4>E-commerce Solutions</h4>
+          <p>Scalable and secure online stores that boost sales and improve user experience.</p>
+        </div>
+        <div class="service__card">
+          <span><i class="ri-smartphone-line"></i></span>
+          <h4>Mobile Development</h4>
+          <p>iOS & Android apps built with performance and seamless design in mind.</p>
+        </div>
+        <div class="service__card">
+          <span><i class="ri-share-fill"></i></span>
+          <h4>Content Marketing</h4>
+          <p>Compelling blog posts, videos, and social content to grow your audience.</p>
+        </div>
+        <div class="service__card">
+          <span><i class="ri-seo-line"></i></span>
+          <h4>SEO</h4>
+          <p>Smart SEO strategies to boost visibility, rank higher, and drive traffic.</p>
+        </div>
+        <div class="service__card">
+          <span><i class="ri-share-circle-line"></i></span>
+          <h4>Digital Marketing</h4>
+          <p>Social ads, PPC, and campaigns that get results and grow your brand.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PORTFOLIO ===== -->
+    <section class="section__container portfolio__container" id="portfolio">
+      <h2 class="section__header">Portfolio</h2>
+      <p class="section__description">
+        A showcase of projects demonstrating skills in web development, design,
+        and marketing. Each project reflects passion for creativity and innovation.
+      </p>
+
+      <!-- FILTER BUTTONS -->
+      <div class="portfolio__filters">
+        <button class="btn active" data-filter="all">All</button>
+        <button class="btn" data-filter="web">Web</button>
+        <button class="btn" data-filter="design">Design</button>
+        <button class="btn" data-filter="marketing">Marketing</button>
+      </div>
+
+      <!-- PORTFOLIO GRID -->
+      <div class="portfolio__grid">
+        <div class="portfolio__card" data-category="web">
+          <img src="assets/project-1.jpg" alt="E-commerce Website" />
+          <div class="portfolio__overlay">
+            <h4>E-commerce Website</h4>
+            <p>Custom Shopify store with modern UI/UX.</p>
+            <a href="#" target="_blank" class="btn">View Project</a>
+          </div>
+        </div>
+        <div class="portfolio__card" data-category="design">
+          <img src="assets/project-2.jpg" alt="Mobile App Design" />
+          <div class="portfolio__overlay">
+            <h4>Mobile App Design</h4>
+            <p>UI/UX design for a fitness app.</p>
+            <a href="#" target="_blank" class="btn">View Project</a>
+          </div>
+        </div>
+        <div class="portfolio__card" data-category="marketing">
+          <img src="assets/project-3.jpg" alt="Social Media Campaign" />
+          <div class="portfolio__overlay">
+            <h4>Social Media Campaign</h4>
+            <p>Instagram growth campaign with 10k+ reach.</p>
+            <a href="#" target="_blank" class="btn">View Campaign</a>
+          </div>
+        </div>
+        <div class="portfolio__card" data-category="web">
+          <img src="assets/project-4.jpg" alt="Business Website" />
+          <div class="portfolio__overlay">
+            <h4>Business Website</h4>
+            <p>Corporate site for a consultancy firm.</p>
+            <a href="#" target="_blank" class="btn">Live Demo</a>
+          </div>
+        </div>
+        <div class="portfolio__card" data-category="design">
+          <img src="assets/project-5.jpg" alt="Brand Identity" />
+          <div class="portfolio__overlay">
+            <h4>Brand Identity</h4>
+            <p>Logo & visual identity for a startup.</p>
+            <a href="#" target="_blank" class="btn">Case Study</a>
+          </div>
+        </div>
+        <div class="portfolio__card" data-category="marketing">
+          <img src="assets/project-6.jpg" alt="Video Marketing" />
+          <div class="portfolio__overlay">
+            <h4>Video Ads</h4>
+            <p>Promo videos for social media campaigns.</p>
+            <a href="#" target="_blank" class="btn">Watch Video</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- PORTFOLIO STATS -->
+      <div class="portfolio__banner">
+        <div class="portfolio__banner__card">
+          <span><i class="ri-macbook-line"></i></span>
+          <h4>150+ Projects</h4>
+          <p>Delivered</p>
+        </div>
+        <div class="portfolio__banner__card">
+          <span><i class="ri-discuss-line"></i></span>
+          <h4>1500+ Clients</h4>
+          <p>Worldwide</p>
+        </div>
+        <div class="portfolio__banner__card">
+          <span><i class="ri-heart-fill"></i></span>
+          <h4>2700+ Reviews</h4>
+          <p>Positive Feedback</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+<section class="section__container contact__container" id="contact">
+  <div class="logo">ZJ</div>
+  <h2 class="section__header">Let’s Connect</h2>
+  <p class="section__description">
+    I’d love to collaborate and discuss how I can help grow your business.
+  </p>
+  
+  <h3>👤 Name: <span>Zain Ul Abdain</span></h3>
+  <h3>📧 Email: <a href="mailto:zainjutt0167@gmail.com">zainjutt0167@gmail.com</a></h3>
+  <h3>📞 WhatsApp: <a href="https://wa.me/923173324154" target="_blank">+92 317 3324154</a></h3>
+  
+  <div class="contact__socials">
+    <a href="https://www.linkedin.com/in/zain-jutt-094618241/" target="_blank"><i class="ri-linkedin-fill"></i></a>
+    <a href="https://wa.me/923173324154" target="_blank"><i class="ri-whatsapp-fill"></i></a>
+    <a href="https://www.instagram.com/" target="_blank"><i class="ri-instagram-line"></i></a>
+    <a href="https://www.facebook.com/profile.php?id=61553792386854/" target="_blank"><i class="ri-facebook-line"></i></a>
+  </div>
+</section>
+ 
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+      Copyright © 2025 Zain Ul Abdain. All rights reserved.
+    </footer>
+
+    <!-- ===== SCRIPTS ===== -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
